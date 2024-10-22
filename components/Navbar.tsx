@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import logo from "../static/logo.svg";
@@ -49,13 +49,16 @@ export default function Navbar() {
           </a>
           <a
             href="#"
-            className=" text-[16px] font-semibold leading-5 text-left text-white"
+            className="text-[16px] font-semibold leading-5 text-left text-white before:relative
+  before:content-[''] before:inline-block before:w-2.5 before:h-2.5 before:bg-customGradiantTo 
+  before:rounded-full before:align-middle before:mt-[40px] before:left-[33px]"
           >
             메타휴먼
           </a>
           <a
             href="#"
-            className="w-[60px] h-[19px] text-[16px] font-semibold leading-5 text-left text-white"
+            className="w-[60px] h-[19px] text-[16px] font-semibold leading-5 text-left text-white
+            "
           >
             상제작소
           </a>
@@ -82,13 +85,27 @@ export default function Navbar() {
         {/* Mobile Menu (Dropdown) */}
         {isMenuOpen && (
           <div className="absolute top-[100px] left-0 w-full bg-black bg-opacity-90 text-white flex flex-col items-center py-4 space-y-4 lg:hidden">
-            <a href="#" className="text-lg">스튜디오</a>
-            <a href="#" className="text-lg">워크센터</a>
-            <a href="#" className="text-lg">손비서</a>
-            <a href="#" className="text-lg">메타휴먼</a>
-            <a href="#" className="text-lg">영상제작소</a>
-            <a href="#" className="text-lg">공지사항</a>
-            <a href="#" className="text-lg">제휴문의</a>
+            <a href="#" className="text-lg">
+              스튜디오
+            </a>
+            <a href="#" className="text-lg">
+              워크센터
+            </a>
+            <a href="#" className="text-lg">
+              손비서
+            </a>
+            <a href="#" className="text-lg">
+              메타휴먼
+            </a>
+            <a href="#" className="text-lg">
+              영상제작소
+            </a>
+            <a href="#" className="text-lg">
+              공지사항
+            </a>
+            <a href="#" className="text-lg">
+              제휴문의
+            </a>
             <div className="flex items-center space-x-4">
               <span className="text-white">로그인</span>
               <Image src={globeIcon} alt="Globe Icon" className="w-8 h-8" />
